@@ -27,7 +27,7 @@
                     <a class="nav-link" aria-current="page" href="#profile">Profile</a>
                 </div>
                 <div>
-                    <a class="nav-link" aria-current="page" href="registerOption.html">Login</a>
+                    <a class="nav-link" aria-current="page" href="registerOption.php">Login</a>
                 </div>
             </div>
         </div>
