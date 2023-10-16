@@ -14,7 +14,7 @@
         </div>
         <hr style="border-color: white; border-width: 2px;">
         <div class="copyright">
-            Copyright 2023 | Group 10 Web C aft
+            Copyright 2023 • All rights reserved • AMERTA
         </div>
     </footer>
 </body>

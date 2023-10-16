@@ -11,7 +11,6 @@ html, body {
 body {
     background: linear-gradient(to bottom, #5669FF, #ffffff);
     margin: 0;
-    /* Menghapus margin default dari body */
     background-repeat: no-repeat;
 }
 

@@ -17,15 +17,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-                <div class="me-4">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                <!-- <div class="me-4">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
                 </div>
                 <div class="me-4">
                     <a class="nav-link" aria-current="page" href="#about">About</a>
                 </div>
                 <div class="me-4">
                     <a class="nav-link" aria-current="page" href="#profile">Profile</a>
-                </div>
+                </div> -->
                 <div>
                     <a class="nav-link" aria-current="page" href="registerOption.php">Login</a>
                 </div>

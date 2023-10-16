@@ -8,6 +8,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Amerta</title>
 </head>
 
@@ -16,7 +17,7 @@
         <?php include 'app/components/headerLanding.php' ?>
     </header>
     <img src="assets/img/Vector1.png" class="z-n1 position-absolute" alt="" width="300px">
-    <section class="container mt-5" id="home">
+    <section class="container mt-5" id="home" data-aos="fade-up">
         <div class="container text-center">
             <div class="row align-items-center">
                 <div class="col homeLeft mb-5">
@@ -36,26 +37,24 @@
     </section>
     <div id="about"></div>
 
-    <section class="container mt-5">
+    <section class="content1 mt-5 content2" data-aos="fade-up">
         <div class="container text-center mt-5">
-            <div class="row align-items-center">
-                <div class="col aboutLeft mb-5">
-                    <img src="assets/img/pic2.png" alt="" width="450px">
+            <div class="text-center position-absolute top-50 start-50 translate-middle">
+                <div class="rightAccent">
+                    GET YOUR DREAM EVENT
                 </div>
-                <div class="col text-center mb-5">
-                    <span class="rightAccent">ABOUT</span>
-                    <div class="mt-5 aboutRight">
-                        AMERTA was established in 2023, since its establishment AMERTA has become one of the most
-                        popular websites among the public. AMERTA which means ETERNAL who hopes someone can capture
-                        memorable moments of his life.
-                    </div>
-
-                </div>
+                <a href="registerOption.php">
+                    <button class="btn startBtn">
+                        Get Started
+                    </button>
+                </a>
             </div>
         </div>
+        
+        
     </section>
 
-    <section class="container justify-content-center text-center mt-5 mb-5" id="profile">
+    <section class="container justify-content-center text-center mt-5 mb-5" id="profile" data-aos="fade-up">
         <div class="profileTitle">
             PROFILE
         </div>
@@ -73,6 +72,7 @@
                 </div>
             </div>
         </div>
+        
     </section>
 
     <footer>
@@ -89,6 +89,11 @@
         });
 
         splide.mount();
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>
