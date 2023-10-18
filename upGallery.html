@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/upGallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Amerta | Upload</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">AMERTA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    </ul>
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="registerOption.html">
+                            <button type="button" class="btn btn-lg navBtn rounded-circle">
+                                <i class="bi bi-send d-flex justify-content-center"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="registerOption.html">
+                            <button type="button" class="btn btn-lg navBtn rounded-circle">
+                                <i class="bi bi-bookmarks d-flex justify-content-center"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="registerOption.html">
+                            <button type="button" class="btn btn-lg navBtn rounded-circle">
+                                <i class="bi bi-person d-flex justify-content-center"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container mt-4">
+        <div class="sectionTitle">
+            ADD NEW GALLERY
+        </div>
+        <div class="card cardGallery mt-4">
+            <span class="fs-6 fw-semibold">Information</span>
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label">Name of Service</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label">Category</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label">Packet Type</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label">Fee/Packet</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label">Admin Phone Number</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label">Add Image</label>
+                <div class="col-sm-4">
+                    <input type="file" class="form-control" multiple>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label">Description</label>
+                <div class="col-sm-4">
+                    <!-- <input type="text" class="form-control"> -->
+                    <textarea class="form-control" cols="30" rows="10" style="resize: none;">
+
+                    </textarea>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label">Status</label>
+                <div class="col-sm-3">
+                    <div class="form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-outline-dark me-md-2" type="button">Cancel</button>
+                <button class="btn btn-primary" type="button">Save</button>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="container text-center mb-3">
+        <hr style="border-color: white; border-width: 2px;">
+        <div class="text-center">
+            <div class="row">
+                <div class="col text-start footerTitle">
+                    AMERTA
+                    <div class="footerTextLeft">
+                        Nongsa Digital Park, Digital Park, Sambau, Nongsa Batam City, Riau Islands 29466
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col text-end footerTextRight">
+                    Get in touch
+                    <div>
+                        <button type="button" class="btn btn-lg navBtn rounded-circle">
+                            <i class="bi bi-envelope d-flex justify-content-center"></i>
+                        </button>
+                        <button type="button" class="btn btn-lg navBtn rounded-circle">
+                            <i class="bi bi-instagram d-flex justify-content-center"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col"></div>
+                <div class="col-4 copyright">
+                    Copyright 2023 • All rights reserved • AMERTA
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
