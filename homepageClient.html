@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/homepageClient.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Amerta | WishList</title>
+</head>
+
+<body>
+    <header class="container">
+        <a class="navbar-brand d-flex justify-content-center mt-3" href="homepageClient.html">AMERTA</a>
+        <div class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Need Some Organizer? Type Here....."
+                            aria-label="Search">
+                    </form>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    </ul>
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="chatClient.html">
+                            <button type="button" class="btn btn-lg navBtn rounded-circle">
+                                <i class="bi bi-send d-flex justify-content-center"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="wishlist.html">
+                            <button type="button" class="btn btn-lg navBtn rounded-circle">
+                                <i class="bi bi-bookmarks d-flex justify-content-center"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="navbar-nav dropdown">
+                        <a class="nav-link" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button type="button" class="btn btn-lg navBtn rounded-circle">
+                                <i class="bi bi-person d-flex justify-content-center"></i>
+                            </button>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark shadow animated--grow-in dropdown-menu-lg-end" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="editProfileClient.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="historyUser.html">History</a></li>
+                            <li><a class="dropdown-item" href="/">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container mt-5">
+        <div class="backgroundImg align-items-center justify-content-center d-flex">
+
+        </div>
+
+        <div class="mt-5 justify-content-center text-center">
+            <div class="splide" id="splide2" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <button type="button" class="btn btn-secondary">Wedding</button>
+                        </li>
+                        <li class="splide__slide">
+                            <button type="button" class="btn btn-secondary">Wedding</button>
+                        </li>
+                        <li class="splide__slide">
+                            <button type="button" class="btn btn-secondary">Wedding</button>
+                        </li>
+                        <li class="splide__slide">
+                            <button type="button" class="btn btn-secondary">Wedding</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+            <div class="col">
+                <div class="card h-100 p-3 rounded-4">
+                    <img src="assets/img/foto2.jpg" class="card-img-top rounded-3" alt="...">
+                    <div class="row mt-3">
+                        <div class="col-8 d-flex align-items-center">
+                            <h5 class="card-title">Hylist Diamond</h5>
+                        </div>
+                        <div class="col-4 d-flex justify-content-end align-items-center">
+                            <button type="button" class="btn btn-outline-dark btn-sm">wedding</button>
+                        </div>
+                    </div>
+                    <p class="card-text mt-3" style="font-size: 12px; text-align: justify;">Kami berpegalaman dalam
+                        pengadaan acara pernikahan. Semua dapat kami atur sesuai dengan permintaan pelanggan. read
+                        more......</p>
+                    <a href="catalogClient.html">
+                        <button type="button" class="btn btn-dark btn-sm w-50">Start 5.000.000</button>
+                    </a>
+                    <div class="row mt-3">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col d-flex justify-content-end align-items-center">
+                            <i class="bi bi-share me-3" style="cursor: pointer;"></i>
+                            <i class="bi bi-bookmarks" style="cursor: pointer;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 p-3 rounded-4">
+                    <img src="assets/img/foto3.jpeg" class="card-img-top rounded-3" alt="...">
+                    <div class="row mt-3">
+                        <div class="col-8 d-flex align-items-center">
+                            <h5 class="card-title">Hylist Diamond</h5>
+                        </div>
+                        <div class="col-4 d-flex justify-content-end align-items-center">
+                            <button type="button" class="btn btn-outline-dark btn-sm">wedding</button>
+                        </div>
+                    </div>
+                    <p class="card-text mt-3" style="font-size: 12px; text-align: justify;">Kami berpegalaman dalam
+                        pengadaan acara pernikahan. Semua dapat kami atur sesuai dengan permintaan pelanggan. read
+                        more......</p>
+                    <a href="catalogClient.html">
+                        <button type="button" class="btn btn-dark btn-sm w-50">Start 5.000.000</button>
+                    </a>
+                    <div class="row mt-3">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col d-flex justify-content-end align-items-center">
+                            <i class="bi bi-share me-3" style="cursor: pointer;"></i>
+                            <i class="bi bi-bookmarks" style="cursor: pointer;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 p-3 rounded-4">
+                    <img src="assets/img/foto4.jpeg" class="card-img-top rounded-3" alt="...">
+                    <div class="row mt-3">
+                        <div class="col-8 d-flex align-items-center">
+                            <h5 class="card-title">Hylist Diamond</h5>
+                        </div>
+                        <div class="col-4 d-flex justify-content-end align-items-center">
+                            <button type="button" class="btn btn-outline-dark btn-sm">wedding</button>
+                        </div>
+                    </div>
+                    <p class="card-text mt-3" style="font-size: 12px; text-align: justify;">Kami berpegalaman dalam
+                        pengadaan acara pernikahan. Semua dapat kami atur sesuai dengan permintaan pelanggan. read
+                        more......</p>
+                    <a href="catalogClient.html">
+                        <button type="button" class="btn btn-dark btn-sm w-50">Start 5.000.000</button>
+                    </a>
+                    <div class="row mt-3">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col d-flex justify-content-end align-items-center">
+                            <i class="bi bi-share me-3" style="cursor: pointer;"></i>
+                            <i class="bi bi-bookmarks" style="cursor: pointer;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 p-3 rounded-4">
+                    <img src="assets/img/foto5.jpg" class="card-img-top rounded-3" alt="...">
+                    <div class="row mt-3">
+                        <div class="col-8 d-flex align-items-center">
+                            <h5 class="card-title">Hylist Diamond</h5>
+                        </div>
+                        <div class="col-4 d-flex justify-content-end align-items-center">
+                            <button type="button" class="btn btn-outline-dark btn-sm">wedding</button>
+                        </div>
+                    </div>
+                    <p class="card-text mt-3" style="font-size: 12px; text-align: justify;">Kami berpegalaman dalam
+                        pengadaan acara pernikahan. Semua dapat kami atur sesuai dengan permintaan pelanggan. read
+                        more......</p>
+                    <a href="catalogClient.html">
+                        <button type="button" class="btn btn-dark btn-sm w-50">Start 5.000.000</button>
+                    </a>
+                    <div class="row mt-3">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col d-flex justify-content-end align-items-center">
+                            <i class="bi bi-share me-3" style="cursor: pointer;"></i>
+                            <i class="bi bi-bookmarks" style="cursor: pointer;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 p-3 rounded-4">
+                    <img src="assets/img/foto6.jpg" class="card-img-top rounded-3" alt="...">
+                    <div class="row mt-3">
+                        <div class="col-8 d-flex align-items-center">
+                            <h5 class="card-title">Hylist Diamond</h5>
+                        </div>
+                        <div class="col-4 d-flex justify-content-end align-items-center">
+                            <button type="button" class="btn btn-outline-dark btn-sm">wedding</button>
+                        </div>
+                    </div>
+                    <p class="card-text mt-3" style="font-size: 12px; text-align: justify;">Kami berpegalaman dalam
+                        pengadaan acara pernikahan. Semua dapat kami atur sesuai dengan permintaan pelanggan. read
+                        more......</p>
+                    <a href="catalogClient.html">
+                        <button type="button" class="btn btn-dark btn-sm w-50">Start 5.000.000</button>
+                    </a>
+                    <div class="row mt-3">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col d-flex justify-content-end align-items-center">
+                            <i class="bi bi-share me-3" style="cursor: pointer;"></i>
+                            <i class="bi bi-bookmarks" style="cursor: pointer;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="justify-content-center text-center mt-5 mb-5">
+            <h1 class="galery-title text-center"> Recomendation <br> For You</h1>
+            <div class="profileBorder">
+                <div class="splide" id="splide" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="col">
+                                    <div class="card h-100 p-3 rounded-4">
+                                        <img src="assets/img/foto2.jpg" class="card-img-top rounded-3" alt="...">
+                                        <div class="row mt-3">
+                                            <div class="col-8 d-flex align-items-center">
+                                                <h5 class="card-title">Hylist Diamond</h5>
+                                            </div>
+                                            <div class="col-4 d-flex justify-content-end align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-outline-dark btn-sm">wedding</button>
+                                            </div>
+                                        </div>
+                                        <p class="card-text mt-3" style="font-size: 12px; text-align: justify;">Kami
+                                            berpegalaman dalam
+                                            pengadaan acara pernikahan. Semua dapat kami atur sesuai dengan permintaan
+                                            pelanggan. read
+                                            more......</p>
+                                        <a href="catalogClient.html" class="text-start"><button type="button"
+                                                class="btn btn-sm w-50"
+                                                style="background-color: #83A2DB; color: #FFFFFF;">Start
+                                                5.000.000</button>
+                                        </a>
+                                        <div class="row mt-3">
+                                            <div class="col"></div>
+                                            <div class="col"></div>
+                                            <div class="col d-flex justify-content-end align-items-center">
+                                                <i class="bi bi-share me-3" style="cursor: pointer;"></i>
+                                                <i class="bi bi-bookmarks" style="cursor: pointer;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="col">
+                                    <div class="card h-100 p-3 rounded-4">
+                                        <img src="assets/img/foto5.jpg" class="card-img-top rounded-3" alt="...">
+                                        <div class="row mt-3">
+                                            <div class="col-8 d-flex align-items-center">
+                                                <h5 class="card-title">Hylist Diamond</h5>
+                                            </div>
+                                            <div class="col-4 d-flex justify-content-end align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-outline-dark btn-sm">wedding</button>
+                                            </div>
+                                        </div>
+                                        <p class="card-text mt-3" style="font-size: 12px; text-align: justify;">Kami
+                                            berpegalaman dalam
+                                            pengadaan acara pernikahan. Semua dapat kami atur sesuai dengan permintaan
+                                            pelanggan. read
+                                            more......</p>
+                                        <a href="catalogClient.html" class="text-start"><button type="button"
+                                                class="btn btn-sm w-50"
+                                                style="background-color: #83A2DB; color: #FFFFFF;">Start
+                                                5.000.000</button></a>
+                                        <div class="row mt-3">
+                                            <div class="col"></div>
+                                            <div class="col"></div>
+                                            <div class="col d-flex justify-content-end align-items-center">
+                                                <i class="bi bi-share me-3" style="cursor: pointer;"></i>
+                                                <i class="bi bi-bookmarks" style="cursor: pointer;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="col">
+                                    <div class="card h-100 p-3 rounded-4">
+                                        <img src="assets/img/foto3.jpeg" class="card-img-top rounded-3" alt="...">
+                                        <div class="row mt-3">
+                                            <div class="col-8 d-flex align-items-center">
+                                                <h5 class="card-title">Hylist Diamond</h5>
+                                            </div>
+                                            <div class="col-4 d-flex justify-content-end align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-outline-dark btn-sm">wedding</button>
+                                            </div>
+                                        </div>
+                                        <p class="card-text mt-3" style="font-size: 12px; text-align: justify;">Kami
+                                            berpegalaman dalam
+                                            pengadaan acara pernikahan. Semua dapat kami atur sesuai dengan permintaan
+                                            pelanggan. read
+                                            more......</p>
+                                        <a href="catalogClient.html" class="text-start"><button type="button"
+                                                class="btn btn-sm w-50"
+                                                style="background-color: #83A2DB; color: #FFFFFF;">Start
+                                                5.000.000</button></a>
+                                        <div class="row mt-3">
+                                            <div class="col"></div>
+                                            <div class="col"></div>
+                                            <div class="col d-flex justify-content-end align-items-center">
+                                                <i class="bi bi-share me-3" style="cursor: pointer;"></i>
+                                                <i class="bi bi-bookmarks" style="cursor: pointer;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="col">
+                                    <div class="card h-100 p-3 rounded-4">
+                                        <img src="assets/img/foto4.jpeg" class="card-img-top rounded-3" alt="...">
+                                        <div class="row mt-3">
+                                            <div class="col-8 d-flex align-items-center">
+                                                <h5 class="card-title">Hylist Diamond</h5>
+                                            </div>
+                                            <div class="col-4 d-flex justify-content-end align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-outline-dark btn-sm">wedding</button>
+                                            </div>
+                                        </div>
+                                        <p class="card-text mt-3" style="font-size: 12px; text-align: justify;">Kami
+                                            berpegalaman dalam
+                                            pengadaan acara pernikahan. Semua dapat kami atur sesuai dengan permintaan
+                                            pelanggan. read
+                                            more......</p>
+                                        <a href="catalogClient.html" class="text-start"><button type="button"
+                                                class="btn btn-sm w-50"
+                                                style="background-color: #83A2DB; color: #FFFFFF;">Start
+                                                5.000.000</button></a>
+                                        <div class="row mt-3">
+                                            <div class="col"></div>
+                                            <div class="col"></div>
+                                            <div class="col d-flex justify-content-end align-items-center">
+                                                <i class="bi bi-share me-3" style="cursor: pointer;"></i>
+                                                <i class="bi bi-bookmarks" style="cursor: pointer;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container text-center mb-3">
+            <hr style="border-color: white; border-width: 2px;">
+            <div class="text-center">
+                <div class="row">
+                    <div class="col text-start footerTitle">
+                        AMERTA
+                        <div class="footerTextLeft">
+                            Nongsa Digital Park, Digital Park, Sambau, Nongsa Batam City, Riau Islands 29466
+                        </div>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                    <div class="col text-end footerTextRight">
+                        Get in touch
+                        <div>
+                            <button type="button" class="btn btn-lg navBtn rounded-circle">
+                                <i class="bi bi-envelope d-flex justify-content-center"></i>
+                            </button>
+                            <button type="button" class="btn btn-lg navBtn rounded-circle">
+                                <i class="bi bi-instagram d-flex justify-content-center"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col"></div>
+                    <div class="col-4 copyright">
+                        Copyright 2023 • All rights reserved • AMERTA
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script type="text/javascript">
+        var splide = new Splide('#splide', {
+            type: 'loop',
+            perPage: 3,
+            focus: 'center',
+            pagination: false,
+            gap: 10,
+        });
+
+        splide.mount();
+    </script>
+    <script type="text/javascript">
+        var splide = new Splide('#splide2', {
+            type: 'loop',
+            perPage: 5,
+            focus: 'center',
+            pagination: false,
+        });
+
+        splide.mount();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+        var dropdownList = dropdownElementList.map(function(dropdownToggleEl) {
+            return new bootstrap.Dropdown(dropdownToggleEl)
+        })
+    </script>
+</body>
+
+</html>

@@ -6,18 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/eoGallery.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/transactionAfterPayment.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <title>Amerta | Gallery</title>
+    <title>AMERTA | Transaction After Payment</title>
 </head>
 
 <body>
     <header class="container">
         <div class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="homepageEventOrganizer.html">AMERTA</a>
+                <a class="navbar-brand" href="homepageClient.html">AMERTA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -33,7 +31,13 @@
                             </button>
                         </a>
                     </div>
-
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="historyUser.html">
+                            <button type="button" class="btn btn-lg navBtn rounded-circle">
+                                <i class="bi bi-bookmarks d-flex justify-content-center"></i>
+                            </button>
+                        </a>
+                    </div>
                     <div class="navbar-nav dropdown">
                         <a class="nav-link" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <button type="button" class="btn btn-lg navBtn rounded-circle">
@@ -42,7 +46,7 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark shadow animated--grow-in dropdown-menu-lg-end" aria-labelledby="userDropdown">
                             <li><a class="dropdown-item" href="editProfileClient.html">Profile</a></li>
-                            <li><a class="dropdown-item" href="transactionNeedConfirm.html">Order</a></li>
+                            <li><a class="dropdown-item" href="historyUser.html">History</a></li>
                             <li><a class="dropdown-item" href="/">Logout</a></li>
                         </ul>
                     </div>
@@ -50,64 +54,49 @@
             </div>
         </div>
     </header>
-
-    <section class="container mt-4">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col"></div>
-                <div class="col galleryText">
-                    Your Gallery
-                    <p class="subText">Hylist Diamond</p>
-                </div>
-                <div class="col text-end">
-                    <a href="upGallery.html">
-                        <button type="button" class="btn addBtn">Add new gallery</button>
-                    </a>
-                </div>
+    <section class="container mt-5">
+        <div class="editTitle">Hylist Diamond</div>
+        <div class="container editBorder mt-3">
+            <div class="editSubTitle">Order Information</div>
+            <div class=" mt-4">
+                <img src="assets/img/unsplash_K8KiCHh4WU4.png" class="rounded-3" alt="..." width="100%">
             </div>
-        </div>
-    </section>
-
-    <section class="container mt-4">
-        <div class="card text-center p-5 rounded-4">
-            <img src="assets/img/unsplash_K8KiCHh4WU6.png" alt="" class="rounded-4">
-            <div class="card-body">
-                <div class="card-text">
-                    <div class="text-center">
-                        <div class="row mt-2">
-                            <div class="col textCard text-start">
-                                SPRING LIGHT <br>
-                                like a beautiful summer
-                            </div>
-                            <div class="col text-end">
-                                <a href="homepageEventOrganizer.html">
-                                    <button type="button" class="btn btn-danger">Delete</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="mb-3 mt-3">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <td>Nama</td>
+                            <td>: Ana</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alamat</td>
+                            <td>: Gang Remaja III, Kota Administrasi Jakarta Selatan, Daerah Khusus Ibukota Jakarta, Indonesia</td>
+                        </tr>
+                        <tr>
+                            <td>In order</td>
+                            <td>: Wedding</td>
+                        </tr>
+                        <tr>
+                            <td>Additional orders</td>
+                            <td>: In the outdoor with spring-like shades</td>
+                        </tr>
+                        <tr>
+                            <td>Date of event</td>
+                            <td>: October 24, 2023</td>
+                        </tr>
+                        <tr>
+                            <td>Price</td>
+                            <td>: Rp. 200.000.000</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </div>
-    </section>
 
-    <section class="container mt-4">
-        <div class="card text-center p-5 rounded-4">
-            <img src="assets/img/unsplash_K8KiCHh4WU6.png" alt="" class="rounded-4">
-            <div class="card-body">
-                <div class="card-text">
-                    <div class="text-center">
-                        <div class="row mt-2">
-                            <div class="col textCard text-start">
-                                SPRING LIGHT <br>
-                                like a beautiful summer
-                            </div>
-                            <div class="col text-end">
-                                <button type="button" class="btn btn-danger">Delete</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="mt-5 row">
+                <a href="transactionCancel.html" type="button" class="btn cancelBtn d-flex justify-content-center align-item-center">Cancel</a>
+                <a href="transactionDone.html" type="button" class="btn doneBtn d-flex justify-content-center align-item-center">Done</a>
             </div>
         </div>
     </section>

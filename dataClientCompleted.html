@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/dataClientCompleted.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>AMERTA | Transaction After Payment</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="homepageClient.html">AMERTA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    </ul>
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="registerOption.html">
+                            <button type="button" class="btn btn-lg navBtn rounded-circle">
+                                <i class="bi bi-send d-flex justify-content-center"></i>
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="navbar-nav dropdown">
+                        <a class="nav-link" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button type="button" class="btn btn-lg navBtn rounded-circle">
+                                <i class="bi bi-person d-flex justify-content-center"></i>
+                            </button>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark shadow animated--grow-in dropdown-menu-lg-end" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="editProfileClient.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="historyUser.html">History</a></li>
+                            <li><a class="dropdown-item" href="/">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container mt-5">
+        <div class="editTitle">Hylist Diamond</div>
+        <div class="container editBorder mt-3">
+            <div class="editSubTitle">Information</div>
+            <div class=" mt-4">
+                <img src="assets/img/unsplash_K8KiCHh4WU4.png" class="rounded-3" alt="..." width="100%">
+            </div>
+            <div class="mb-3 mt-3">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <td>Nama</td>
+                            <td>: Ana</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alamat</td>
+                            <td>: Gang Remaja III, Kota Administrasi Jakarta Selatan, Daerah Khusus Ibukota Jakarta,
+                                Indonesia</td>
+                        </tr>
+                        <tr>
+                            <td>In order</td>
+                            <td>: Wedding</td>
+                        </tr>
+                        <tr>
+                            <td>Additional orders</td>
+                            <td>: In the outdoor with spring-like shades</td>
+                        </tr>
+                        <tr>
+                            <td>Date of event</td>
+                            <td>: 14 December 2023</td>
+                        </tr>
+                        <tr>
+                            <td>Price</td>
+                            <td>: Rp. 7.007.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-5">
+                <button type="button" class="btn doneBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Bukti Pembayaran</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container text-center mb-3">
+        <hr style="border-color: white; border-width: 2px;">
+        <div class="text-center">
+            <div class="row">
+                <div class="col text-start footerTitle">
+                    AMERTA
+                    <div class="footerTextLeft">
+                        Nongsa Digital Park, Digital Park, Sambau, Nongsa Batam City, Riau Islands 29466
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col text-end footerTextRight">
+                    Get in touch
+                    <div>
+                        <button type="button" class="btn btn-lg navBtn rounded-circle">
+                            <i class="bi bi-envelope d-flex justify-content-center"></i>
+                        </button>
+                        <button type="button" class="btn btn-lg navBtn rounded-circle">
+                            <i class="bi bi-instagram d-flex justify-content-center"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col"></div>
+                <div class="col-4 copyright">
+                    Copyright 2023 • All rights reserved • AMERTA
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup Data -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">PAYMENT</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col">
+                                <div class="mt-3">
+                                    <h6>Hylist Diamond</h6>
+                                </div>
+                                <div class="mt-4">
+                                    <table class="table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <td>Nama</td>
+                                                <td>: Ana</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Service Package</td>
+                                                <td>: Bundling All</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Date of event</td>
+                                                <td>: 14 December 2023 2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                            <tr>
+                                                <td>Price</td>
+                                                <td>: Rp. 7.000.000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Operational</td>
+                                                <td>: Rp. 7.000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sum Price </td>
+                                                <td>: Rp. 7.007.000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup Data -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+        var dropdownList = dropdownElementList.map(function(dropdownToggleEl) {
+            return new bootstrap.Dropdown(dropdownToggleEl)
+        })
+    </script>
+</body>
+
+</html>

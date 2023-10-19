@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/chat.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Amerta | Chat</title>
+</head>
+<body>
+    <header class="container">
+        <div class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="homepageClient.html">AMERTA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    </ul>
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="registerOption.html">
+                            <button type="button" class="btn btn-lg navBtn rounded-circle">
+                                <i class="bi bi-send d-flex justify-content-center"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="historyUser.html">
+                            <button type="button" class="btn btn-lg navBtn rounded-circle">
+                                <i class="bi bi-bookmarks d-flex justify-content-center"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="navbar-nav dropdown">
+                        <a class="nav-link" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button type="button" class="btn btn-lg navBtn rounded-circle">
+                                <i class="bi bi-person d-flex justify-content-center"></i>
+                            </button>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark shadow animated--grow-in dropdown-menu-lg-end" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="editProfileClient.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="historyUser.html">History</a></li>
+                            <li><a class="dropdown-item" href="/">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+            <div id="container">
+                <aside>
+                    <ul>
+                        <li>
+                            <img src="assets/img/foto1.jpg" style="width: 50px; height: 50px;" alt="">
+                            <div>
+                                <h2>Hylist Diamond</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/foto7.jpeg" style="width: 50px; height: 50px;" alt="">
+                            <div>
+                                <h2>Amerta</h2>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+                <main>
+                    <header>
+                        <img src="assets/img/foto1.jpg" style="width: 50px; height: 50px;" alt="">
+                        <div>
+                            <h2>Hylist Diamond</h2>
+                            <h3>online</h3>
+                        </div>
+                    </header>
+                    <ul id="chat">
+                        <li class="you">
+                            <div class="entete">
+                                <h2>Vincent</h2>
+                                <h3>15.30</h3>
+                            </div>
+                            <div class="triangle"></div>
+                            <div class="message">
+                                Hello, we provide a large selection of event organizers.
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="text">
+                        <textarea placeholder="Type your message"></textarea>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="57" height="51" viewBox="0 0 57 51" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M45.7909 5.69018L8.95203 13.7179C4.67909 14.649 4.14567 19.7541 8.15534 21.3427L19.5056 25.8398C21.9963 26.8266 24.718 27.1044 27.3148 26.712C26.8645 28.9754 27.1833 31.3479 28.3154 33.5189L33.4746 43.4124C35.2972 46.9075 41.1539 46.4424 42.2222 42.718L51.4319 10.6072C52.2836 7.63763 49.1977 4.9478 45.7909 5.69018ZM9.93949 17.1608C9.40647 17.2769 9.33993 17.9138 9.84011 18.1119L21.1903 22.609C23.7718 23.6318 26.7103 23.559 29.1855 22.4797C29.6507 22.2769 30.0996 22.0384 30.5267 21.7651C30.6298 21.6991 30.7316 21.631 30.8321 21.561L36.268 17.7704C37.1332 17.1671 38.2651 18.1537 37.5729 18.9079L33.2242 23.6461C33.1438 23.7337 33.0658 23.8224 32.9901 23.9123C32.6764 24.2845 32.4029 24.6758 32.1702 25.0813C30.932 27.2388 30.8485 29.8002 32.0219 32.0504L37.1811 41.9438C37.4085 42.3798 38.139 42.3218 38.2723 41.8572L47.482 9.74647C47.5883 9.37603 47.2033 9.04049 46.7783 9.1331L9.93949 17.1608Z" fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                </main>
+            </div>
+        </section>
+
+        <footer class="container text-center mb-3">
+            <hr style="border-color: white; border-width: 2px;">
+            <div class="text-center">
+                <div class="row">
+                    <div class="col text-start footerTitle">
+                        AMERTA
+                        <div class="footerTextLeft">
+                            Nongsa Digital Park, Digital Park, Sambau, Nongsa Batam City, Riau Islands 29466
+                        </div>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                    <div class="col text-end footerTextRight">
+                        Get in touch
+                        <div>
+                            <button type="button" class="btn btn-lg navBtn rounded-circle">
+                                <i class="bi bi-envelope d-flex justify-content-center"></i>
+                            </button>
+                            <button type="button" class="btn btn-lg navBtn rounded-circle">
+                                <i class="bi bi-instagram d-flex justify-content-center"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col"></div>
+                    <div class="col-4 copyright">
+                        Copyright 2023 • All rights reserved • AMERTA
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript">
+            const dropdownElementList = document.querySelectorAll('.dropdown-toggle')
+            const dropdownList = [...dropdownElementList].map(dropdownToggleEl => new bootstrap.Dropdown(dropdownToggleEl))
+        </script>
+</body>
+</html>

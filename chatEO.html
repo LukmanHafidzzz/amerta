@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/eoGallery.css">
+    <link rel="stylesheet" href="assets/css/chat.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <title>Amerta | Gallery</title>
+    <title>Amerta | Chat</title>
 </head>
-
 <body>
     <header class="container">
         <div class="navbar navbar-expand-lg">
@@ -27,7 +25,7 @@
 
                     </ul>
                     <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="registerOption.html">
+                        <a class="nav-link" aria-current="page" href="chatEO.html">
                             <button type="button" class="btn btn-lg navBtn rounded-circle">
                                 <i class="bi bi-send d-flex justify-content-center"></i>
                             </button>
@@ -51,64 +49,50 @@
         </div>
     </header>
 
-    <section class="container mt-4">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col"></div>
-                <div class="col galleryText">
-                    Your Gallery
-                    <p class="subText">Hylist Diamond</p>
-                </div>
-                <div class="col text-end">
-                    <a href="upGallery.html">
-                        <button type="button" class="btn addBtn">Add new gallery</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container mt-4">
-        <div class="card text-center p-5 rounded-4">
-            <img src="assets/img/unsplash_K8KiCHh4WU6.png" alt="" class="rounded-4">
-            <div class="card-body">
-                <div class="card-text">
-                    <div class="text-center">
-                        <div class="row mt-2">
-                            <div class="col textCard text-start">
-                                SPRING LIGHT <br>
-                                like a beautiful summer
-                            </div>
-                            <div class="col text-end">
-                                <a href="homepageEventOrganizer.html">
-                                    <button type="button" class="btn btn-danger">Delete</button>
-                                </a>
-                            </div>
+    <section>
+        <div id="container">
+            <aside>
+                <ul>
+                    <li>
+                        <svg style="margin-left: 5px; margin-right: 5px;" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 448 512">
+                            <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
+                        </svg>
+                        <div>
+                            <h2>Ana</h2>
                         </div>
+                    </li>
+                </ul>
+            </aside>
+            <main>
+                <header>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 448 512">
+                        <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                    <div>
+                        <h2>Ana</h2>
+                        <h3>online</h3>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container mt-4">
-        <div class="card text-center p-5 rounded-4">
-            <img src="assets/img/unsplash_K8KiCHh4WU6.png" alt="" class="rounded-4">
-            <div class="card-body">
-                <div class="card-text">
-                    <div class="text-center">
-                        <div class="row mt-2">
-                            <div class="col textCard text-start">
-                                SPRING LIGHT <br>
-                                like a beautiful summer
-                            </div>
-                            <div class="col text-end">
-                                <button type="button" class="btn btn-danger">Delete</button>
-                            </div>
+                </header>
+                <ul id="chat">
+                    <li class="you">
+                        <div class="entete">
+                            <h2>Vincent</h2>
+                            <h3>15.30</h3>
                         </div>
-                    </div>
+                        <div class="triangle"></div>
+                        <div class="message">
+                            Hello
+                        </div>
+                    </li>
+                </ul>
+                <div class="text">
+                    <textarea placeholder="Type your message"></textarea>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="57" height="51" viewBox="0 0 57 51" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M45.7909 5.69018L8.95203 13.7179C4.67909 14.649 4.14567 19.7541 8.15534 21.3427L19.5056 25.8398C21.9963 26.8266 24.718 27.1044 27.3148 26.712C26.8645 28.9754 27.1833 31.3479 28.3154 33.5189L33.4746 43.4124C35.2972 46.9075 41.1539 46.4424 42.2222 42.718L51.4319 10.6072C52.2836 7.63763 49.1977 4.9478 45.7909 5.69018ZM9.93949 17.1608C9.40647 17.2769 9.33993 17.9138 9.84011 18.1119L21.1903 22.609C23.7718 23.6318 26.7103 23.559 29.1855 22.4797C29.6507 22.2769 30.0996 22.0384 30.5267 21.7651C30.6298 21.6991 30.7316 21.631 30.8321 21.561L36.268 17.7704C37.1332 17.1671 38.2651 18.1537 37.5729 18.9079L33.2242 23.6461C33.1438 23.7337 33.0658 23.8224 32.9901 23.9123C32.6764 24.2845 32.4029 24.6758 32.1702 25.0813C30.932 27.2388 30.8485 29.8002 32.0219 32.0504L37.1811 41.9438C37.4085 42.3798 38.139 42.3218 38.2723 41.8572L47.482 9.74647C47.5883 9.37603 47.2033 9.04049 46.7783 9.1331L9.93949 17.1608Z" fill="black"/>
+                        </svg>
+                    </button>
                 </div>
-            </div>
+            </main>
         </div>
     </section>
 
@@ -153,5 +137,4 @@
         })
     </script>
 </body>
-
 </html>
